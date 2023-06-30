@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Carrinho {
-    private List<Produto> itens;  
+public class Carrinho {
+    private List<Produto> itens;
 
     public Carrinho() {
         itens = new ArrayList<>();  // Começa lista de itens como um ArrayList vazia
@@ -15,18 +15,17 @@ class Carrinho {
     }
 
     public List<Produto> getItens() {
-        return itens;   
+        return itens;
     }
 
     public double calcularTotal() {
-        double total = 0;  
+        double total = 0;
 
         // getPreco() é somado ao total.
         for (Produto produto : itens) {
             total += produto.getPreco();
         }
 
-        return total;  
+        return total;
     }
 }
-
